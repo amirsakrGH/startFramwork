@@ -1,0 +1,9 @@
+.about{
+  min-height: calc(100vh - 106px);
+  background-color: #1abc9c;
+}
+.line{
+  background-color: white;
+  width: 80px;
+  height: 4px;
+}

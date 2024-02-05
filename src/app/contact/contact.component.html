@@ -1,0 +1,27 @@
+<div class="pt-4 mb-5 contact">
+  <div class="text-center pt-4 ">
+    <h2 class="mb-3 fs-1 fw-bolder">CONATCT SECTION</h2>
+    <div class=" mb-3 d-flex justify-content-center align-items-center">
+      <div class="line "></div>
+      <i class="fa-solid fa-star mx-3 "></i>
+      <div class="line "></div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <form class=" mt-5 py-3 px-2 w-50 mx-auto" action="">
+      <label  [ngClass]="count > 0 && check == 'name' ? 'top-0' : 'lab' "  for="userName">userName :</label>
+      <input (keyup)="label($event,'name')"  class="position-relative  form-control shadow-none py-3 border-0 border-bottom position-relative" type="text" placeholder="userName" name="" id="userName">
+
+      <label  [ngClass]="count > 0 && check == 'age' ? 'top-0' : 'lab' " for="userAge">userAge :</label>
+      <input (keyup)="label($event,'age')" class="form-control shadow-none py-3 border-0 border-bottom position-relative" type="text" placeholder="userAge" name="" id="userAge">
+
+      <label [ngClass]="count > 0 && check == 'email' ? 'top-0' : 'lab' " for="userEmail">userEmail :</label>
+      <input (keyup)="label($event,'email')" class="form-control shadow-none py-3 border-0 border-bottom position-relative" type="text" placeholder="userEmail" name="" id="userEmail">
+
+      <label [ngClass]="count > 0 && check == 'pass' ? 'top-0' : 'lab' " for="userAge">userPassword :</label>
+      <input (keyup)="label($event ,'pass')" class="form-control shadow-none py-3 border-0 border-bottom position-relative" type="text" placeholder="userPassword" name="" id="userPassword">
+
+      <button type="submit" class="btn mt-4 text-white"> send Message </button>
+    </form>
+  </div>
+</div>
